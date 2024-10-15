@@ -14,7 +14,7 @@ class PasarelaPagoTarjetaCredito(PasarelaPago): #Nuestra clase concreta abstraer
 
 class PasarelaPagoPaypal(PasarelaPago): #Nuestra clase concreta abstraera los atributos de PasarelaPago realizando sus porpios servicios
     def procesoPago(self, monto): #Implementamos la abstracción
-        return f"Procesando el pago de {monto} con PayPal."
+        return f"Ejecutando la transferencia del pago de {monto} con PayPal."
 
     def verificarPago(self): #Implementamos la abstracción
         return "Pago con PayPal verificado con éxito."
